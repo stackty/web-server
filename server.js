@@ -17,7 +17,7 @@ app.get('/', function(reqest, response){
 	response.send('Hello Express');
 });
 app.get('/about', middleware.requireAuthentication, function(request,response){
-	response.send('about Us');
+	response.send('about Us!');
 })
 
 app.use(express.static(__dirname+'/public'));
